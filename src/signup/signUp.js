@@ -91,7 +91,7 @@ class SignupComponent extends React.Component {
       this.setState({ signupError: 'Passwords do not match' });
       return;
     }
-
+//send data to firebase firestore
     firebase
       .auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password)
